@@ -1,0 +1,45 @@
+
+body{
+		
+		font-family: 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic';
+
+}
+form{
+	width: 850px;
+	display: block;
+	box-shadow: 1px 1px 1px black;
+	background-color:#46bcfc;
+	background-image: linear-gradient(to bottom, #3156bf, #0083c9);
+	border-radius:4px;
+	margin-left: 300px;
+}
+table{
+	 width:774px;
+	 height:238px;
+	 
+	 
+	 }
+
+
+td.hora{
+	display: block;
+	background-color:white ;
+}
+td.hs{
+	font-size: 15pt;
+}
+
+p{
+	font-size: 8pt;
+}
+/* FORMATAÇÃO DAS DOS BOTOES ENTRADA E SAÍDA */
+span#ent{
+	border-radius: 4px;
+	background-color: white;
+	padding: 5px 10px 5px 10px;
+}
+span#sai{
+	border-radius: 4px;
+	background-color: white;
+	padding: 5px 20px 5px 20px;
+}
