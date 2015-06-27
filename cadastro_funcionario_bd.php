@@ -12,14 +12,15 @@
 
 
 	$nome = $_POST['nome'];
+	$senha= $_POST['senha'];
 	$cargo = $_POST['cargo'];
 	$turno = $_POST['turno'];
 	$endereco = $_POST['endereco'];
 	$telefone = $_POST['telefone'];
 
 
-	$com = "INSERT INTO funcionario(nome,cargo,turno,endereco,telefone)
-				VALUES('$nome','$cargo','$turno','$endereco','$telefone')";
+	$com = "INSERT INTO funcionario(nome,senha,cargo,turno,endereco,telefone)
+				VALUES('$nome','$senha','$cargo','$turno','$endereco','$telefone')";
 
 	if(!mysql_query($com,$conexao)){
 

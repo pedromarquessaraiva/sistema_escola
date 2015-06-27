@@ -7,9 +7,10 @@
 
 	<body>
 
-	<form name="formulario_funcionario" method="POST" action="cadastro_funcionario_bd.php">
+	<form name="formulario_funcionario" method="post" action="cadastro_funcionario_bd.php">
 		
 			Nome: <input type="text" name="nome"><br/><br/>
+			Senha: <input type="text" name="senha"><br/><br/>
 			Cargo:<input type="text" name="cargo"><br/><br/>
 			Turno:<input type="text" name="turno"><br/><br/>
 			Endereço:<input type="text" name="endereco"><br/><br/>
