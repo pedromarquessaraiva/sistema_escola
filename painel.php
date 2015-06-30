@@ -18,7 +18,7 @@
 <html>
 
 <head>
-	<title>Painel</title>
+	<title>Painel do Funcionário</title>
 </head>
 
 <body>
