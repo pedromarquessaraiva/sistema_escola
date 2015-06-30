@@ -7,7 +7,7 @@
 
 	if(!isset($_SESSION["usuario"]) || !isset($_SESSION["senha"])){
 
-		header("Location: form_login.php");
+		header("Location: login.php");
 		exit;
 	} else{
 		echo "Você está logado! ;D";

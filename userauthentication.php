@@ -4,19 +4,9 @@
 
 <html>
 <head>
+	<meta charset="UTF-8"/>
+	<script language="JavaScript" src="_javascript/funcoes.js"></script>
 	<title>autenticando usuario</title>
-
-<script type="text/javascript">
-
-	function loginsucessfully(){
-		setTimeout("window.location='painel.php'",1000);
-	}
-
-	function loginfaleid(){
-		setTimeout("window.location='login.php'",1000);
-	}
-
-</script>
 
 </head>
 <body>
@@ -41,12 +31,14 @@ $categoria = $_POST['categorias'];
 	session_start();
 	$_SESSION['usuario'] = $_POST['usuario'];
 	$_SESSION['senha'] = $_POST['senha'];
-	echo "Você foi autenticado com sucesso! Aguarde um instante.";
+	echo "Você foi autenticado com sucesso! Aguarde um instante....";
 	echo "<script>loginsucessfully()</script>";
 
-	} else{
+
+	}else{
 	echo "Nome de usuário ou senha inválidos!, Aguarde um momento!";
 	echo "<script>loginfaleid()</script>";
+
 	}
 
         break;
