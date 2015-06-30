@@ -6,7 +6,7 @@
 
 
 <body>
-	<form name="login" method="post" action="userauthentication.php">
+	<form name="login" method="post" action="validacao.php">
 <label>
 Categoria:
 <select name="categorias">
