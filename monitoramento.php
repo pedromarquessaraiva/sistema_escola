@@ -1,3 +1,5 @@
+
+
 <?php
 	include "conexao_bd.php";
 ?>
@@ -16,27 +18,13 @@
 
 ?>
 <html>
-
 <head>
-	<title>Painel do Funcionário</title>
+	<title>Monitoramento dos Pais!</title>
 </head>
 
 <body>
 	<br/>
-
-
-
 <a href="logout.php">Sair!</a><br/>
-<a href="formulario_aluno.php">Cadastro de Alunos</a><br/>
-<a href="formulario_funcionario.php">Cadastro de Funcionário</a><br/>
-<a href="formulario_responsavel.php">Cadastro do Responsável</a>
-<a href="formulario_excluir.php">Excluir Cadastro</a>
-
-
-
 
 </body>
-
-
-
 </html>
