@@ -1,4 +1,6 @@
 	
+	// Declaração das funções usadas no arquivo validacao.php .
+
 	function loginsucess_funcionario(){
 		setTimeout("window.location='painel.php'",1000);
 	}
