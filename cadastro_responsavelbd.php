@@ -1,3 +1,15 @@
+<?php 
+	session_start();
+
+	if(!isset($_SESSION["usuario"]) || !isset($_SESSION["senha"])){
+
+		header("Location: login.php");
+		exit;
+	} else{
+		echo "Você está logado! ;D";
+	}
+	?>
+	
 <?php
 	include "conexao_bd.php";
 ?>
@@ -5,6 +17,8 @@
 <html>
 <head>
 	<title>Cadastro do Responsável no Banco</title>
+	    <meta charset="UTF-8"/>
+
 </head>
 
 <body>
@@ -24,9 +38,8 @@
 			exit();
 	}
 
-	echo "Foi Gravado com Sucesso os seus Dados!<br/>";
+	echo "<br/>Foi Gravado com Sucesso os seus Dados!<br/>";
 	echo "<a href='painel.php'>Ir para Painel<br/></a>";
-	echo "<a href='formulario_aluno.php'>Ir para Cadastro de Alunos<br/></a>";
 
 	?>
 </body>

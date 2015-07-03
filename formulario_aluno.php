@@ -1,7 +1,19 @@
+<?php 
+	session_start();
+
+	if(!isset($_SESSION["usuario"]) || !isset($_SESSION["senha"])){
+
+		header("Location: login.php");
+		exit;
+	} else{
+		echo "Você está logado! ;D";
+	}
+	?>
+	
 <!DOCTYPE HTML>
 <html>
 <head>
-	<meta charset="utf-8"/>
+    <meta charset="UTF-8"/>
 	<title>Cadastro</title>
 </head>
 

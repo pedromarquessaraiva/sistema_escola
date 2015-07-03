@@ -1,9 +1,22 @@
+<?php 
+	session_start();
+
+	if(!isset($_SESSION["usuario"]) || !isset($_SESSION["senha"])){
+
+		header("Location: login.php");
+		exit;
+	} else{
+		echo "Você está logado! ;D";
+	}
+	?>
+	
 <?php
 	include "conexao_bd.php";
 ?>
 
 <html>
 <head>
+    <meta charset="UTF-8"/>
 	<title>cadastro no banco dos funcionarios</title>
 </head>
 
@@ -28,8 +41,9 @@
 			echo "Não foi possível inserir os dados!";
 			exit();
 	}
-
-	echo "Foi Gravado";
+	echo "<br/>";
+	echo "Foi Gravado<br/>";
+	echo "<a href='painel.php'>Volte ao Painel</a>";
 ?>
 </body>
 

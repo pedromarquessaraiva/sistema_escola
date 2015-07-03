@@ -19,6 +19,8 @@
 
 <head>
 	<title>Painel do Funcionário</title>
+	    <meta charset="UTF-8"/>
+
 </head>
 
 <body>
@@ -29,7 +31,7 @@
 <a href="logout.php">Sair!</a><br/>
 <a href="formulario_aluno.php">Cadastro de Alunos</a><br/>
 <a href="formulario_funcionario.php">Cadastro de Funcionário</a><br/>
-<a href="formulario_responsavel.php">Cadastro do Responsável</a>
+<a href="formulario_responsavel.php">Cadastro do Responsável</a><br/>
 <a href="formulario_excluir.php">Excluir Cadastro</a>
 
 

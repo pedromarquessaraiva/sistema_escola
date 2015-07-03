@@ -19,6 +19,8 @@
 ?>
 <html>
 <head>
+	    <meta charset="UTF-8"/>
+
 	<title>Monitoramento dos Pais!</title>
 </head>
 
