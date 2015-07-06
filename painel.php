@@ -32,6 +32,7 @@
 <a href="formulario_aluno.php">Cadastro de Alunos</a><br/>
 <a href="formulario_funcionario.php">Cadastro de Funcionário</a><br/>
 <a href="formulario_responsavel.php">Cadastro do Responsável</a><br/>
+<a href="formulario_editar.php">Editar Cadastro</a><br/>
 <a href="formulario_excluir.php">Excluir Cadastro</a>
 
 

@@ -8,7 +8,8 @@
 	} else{
 		echo "Você está logado! ;D";
 	}
-	?>
+
+?>
 	
 <!DOCTYPE HTML>
 <html>
@@ -19,7 +20,7 @@
 
 <body>
 	<p>Tela de Excluir!</p>
-	<form name="formulario_excluir" method="POST" action="listaexcluir_bd.php">
+	<form name="formulario_excluir" method="POST" action="lista_editar.php">
 		<label>
 			Categoria:<br/>
 				<select name="categorias">
@@ -32,7 +33,9 @@
 		<input type="text" name="buscar" placeholder="Digite o nome do usuário" required><br/>
 		<input type="submit" value="Pesquisar">
 	</form>
-		<a href="painel.php">Volta para Painel</a>
+
+	<a href="painel.php">Volta a Painel Central</a>
+
 </body>
 
 </html>
