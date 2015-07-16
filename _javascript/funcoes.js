@@ -16,3 +16,9 @@
 	function loginfaleid_resposanvel(){
 		setTimeout("window.location='login.php'",1000);
 	}
+
+
+	function busca(){
+
+		setTimeout("window.location='busca.php'");
+	}

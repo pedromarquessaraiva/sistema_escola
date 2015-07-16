@@ -15,7 +15,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-	<title>Tela de Excluir</title>
+	<title>Tela de Editar</title>
 </head>
 
 <body>

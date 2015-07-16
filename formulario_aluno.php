@@ -13,7 +13,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="UTF-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Cadastro</title>
 </head>
 
@@ -24,8 +24,14 @@
 		Idade:<input type="text" name="idade"><br/><br/>
 		Endereço:<input type="text" name="endereco"><br/><br/>
 		Turma:<input type="text" name="turma"><br/><br/>
-		Turno:<input type="text" name="turno"><br/><br/>
-		Professor:<input type="text" name="professor"><br/><br/>
+			<label>
+			Turno:
+				<select name="turno">
+ 					<option value="manha" selected>Manhã</option>
+ 					<option value="tarde">Tarde</option>
+				</select>
+		</label>
+		<br/><br/>Professor:<input type="text" name="professor"><br/><br/>
 		Telefone para Contato:<input type="text" name="telefone"><br/><br/>
 		<input type="submit" value="Cadastrar" name="submit">
 	</form>

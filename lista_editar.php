@@ -28,7 +28,7 @@ $tabela = $_POST['categorias'];
 $nome = $_POST['buscar'];
 
 
-	$resultado = mysql_query("select * FROM $tabela where nome like '%$nome%'") or die(mysql_error());
+	$resultado = mysql_query("SELECT * FROM $tabela where nome like '%$nome%'") or die(mysql_error());
 
 	switch ($tabela) {
 	

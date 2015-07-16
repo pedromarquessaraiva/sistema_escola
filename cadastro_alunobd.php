@@ -16,12 +16,14 @@
 
 <html>
 <head>
-    <meta charset="UTF-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>cadastro no banco dos funcionarios</title>
 </head>
 
 <body>
 <?php
+	ini_set('default_charset','UTF-8');
+	mysql_set_charset('utf8');
 
 	$nome = $_POST['nome'];
 	$idade = $_POST['idade'];
@@ -42,8 +44,8 @@
 			exit();
 	}
 	echo "<br/>";
-	echo "Foi Gravado<br/>";
-	echo "<a href='painel.php'>Volte ao Painel</a>";
+	echo "Foi Gravado as informações do Aluno $nome";
+	echo "<br/><a href='painel.php'>Volte ao Painel</a>";
 ?>
 </body>
 

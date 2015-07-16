@@ -24,6 +24,9 @@
 <body>
 <?php
 
+	
+	ini_set('default_charset','UTF-8');
+	mysql_set_charset('utf8');
 
 	$nome = $_POST['nome'];
 	$usuario = $_POST['usuario'];
@@ -44,7 +47,10 @@
 			exit();
 	}
 
+	echo "<br/>";
 	echo "Foi gravado as informações do Funcionário $usuario";
+	echo "<br/><a href='painel.php'>Volte ao Painel</a>";
+
 ?>
 </body>
 

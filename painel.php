@@ -29,6 +29,7 @@
 
 
 <a href="logout.php">Sair!</a><br/>
+<a href="formulario_busca.php">Formulário de Busca</a><br/>
 <a href="formulario_aluno.php">Cadastro de Alunos</a><br/>
 <a href="formulario_funcionario.php">Cadastro de Funcionário</a><br/>
 <a href="formulario_responsavel.php">Cadastro do Responsável</a><br/>
