@@ -28,13 +28,15 @@ $data = $_POST['data'];
 $hora = $_POST['hora'];
 
 
-	$resultado = "INSERT INTO movimentacao(data,hora,responsavel,aluno,tipoMovimentacao,funcionario)
-							VALUES('$data','$hora','$responsavel','$aluno	','$entrada','$funcionario')";
+		mysql_query("INSERT INTO movimentacao(data,hora,responsavel,aluno,tipoMovimentacao,funcionario)
+							VALUES('$data','$hora','$responsavel','$aluno	','$entrada','$funcionario')");
 
 
 		if (!mysql_query($resultado)) {
 			echo "Não foi possível gravar os dados";
 		}
 
-		#header("Location: formulario_busca.php");
+		header("Location: formulario_busca.php");
+
+	
 ?>
