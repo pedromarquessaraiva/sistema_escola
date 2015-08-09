@@ -1,7 +1,76 @@
 <?php 
 //Faz a conexão com o banco de dados
 include "conexao_bd.php"; ?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sistema de Busca com jQuery ( Recriando )</title>
+<script src="_javascript/jquery.js"></script>
+<script type="text/javascript">
+function objetoAjax(){
 
+	var xmlhttp=false;
+
+	try {
+
+		xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+
+	} catch (e) {
+
+		try {
+
+		   xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+		} catch (E) {
+
+			xmlhttp = false;
+
+  		}
+
+	}
+
+
+
+	if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
+
+		xmlhttp = new XMLHttpRequest();
+
+	}
+
+	return xmlhttp;
+
+}
+
+function entrada(aluno,funcionario,tipoMovimentacao)
+{
+
+	divResultado= document.getElementById('exemplo');
+
+		ajax=objetoAjax();
+
+	    divResultado.innerHTML= '<img src="images/ajax.gif">';
+	    
+	 	ajax.open("GET", "busca_bd.php?aluno="+aluno+"&funcionario="+funcionario+"&tipoMovimentacao="+tipoMovimentacao);
+
+		ajax.onreadystatechange=function() {
+
+			if (ajax.readyState==4) {
+
+				//mostrar resultados en esta capa
+
+				divResultado.innerHTML = ajax.responseText
+
+			}
+
+		}
+
+		ajax.send(null)	
+
+}
+</script>
+
+<body>
 <?php
 	//Seta os cacteres vindos do banco em UTF8
 	mysql_query("SET NAMES 'utf8'");
@@ -12,6 +81,8 @@ include "conexao_bd.php"; ?>
 	$pesquisa 	= mysql_real_escape_string($_POST['palavra']);
 	//Recupera oque foi selecionado
 	$campo 		= mysql_real_escape_string($_POST['campo']);
+	$campo2 	= mysql_real_escape_string($_POST['campo2']);
+
 	// Recupera a data e hora para o sistema!
 	date_default_timezone_set('America/Sao_Paulo');
 	$data = date('Y/m/d');
@@ -26,6 +97,10 @@ include "conexao_bd.php"; ?>
 	$consultaFuncionario = mysql_query("SELECT codigo from funcionario where usuario like '%$funcionario%'");
 
 	
+	switch ($campo2) { //aqui começa switch
+
+		case "entrada": // aqui começa o CASE ENTRADA
+
 
 	while($resultadoFuncionario = mysql_fetch_array($consultaFuncionario)){
 		//o variável funcionário recebe o código dele nessa linha!
@@ -51,17 +126,14 @@ include "conexao_bd.php"; ?>
 				$verificar = mysql_query("SELECT * FROM movimentacao WHERE data = '$data' and aluno = '$aluno' and tipoMovimentacao = 'ENT'");
 				
 				if(mysql_num_rows($verificar) <= 0){
+				$tipoMovimentacao = 1;
 
 				echo "
-					<form action='busca_bd.php' method='POST'>
-					<input type='submit' name='est' value='ENTRADA'>
+					<form action='' method='POST'>
 
+					<a href='javascript:entrada($aluno,$funcionario,$tipoMovimentacao);' id='btn_entrada'>Entrada</a>
 					$nome
 					$hora
-					<input type='hidden' name='codigofuncionario' value='$funcionario'>
-					<input type='hidden' name='codigoaluno' value='$aluno'>
-					<input type='hidden' name='data' value='$data'>
-					<input type='hidden' name='hora' value='$hora'>
 					<input type='radio' name='responsavel' value='pai'>Pai
 					<input type='radio' name='responsavel' value='mae'>Mãe
 					<input type='radio' name='responsavel' value='avo'>Avôs
@@ -70,9 +142,69 @@ include "conexao_bd.php"; ?>
 				}
 		}
         
-	} 
-	
+	} 			break;
 		
+		case "saida": // aqui começa o CASE SAIDA
+			
+	while($resultadoFuncionario = mysql_fetch_array($consultaFuncionario)){
+		//o variável funcionário recebe o código dele nessa linha!
+		$funcionario = $resultadoFuncionario['codigo'];
+	}
+
+	$sql = "SELECT * FROM aluno WHERE nome LIKE '%$pesquisa%' and turno like '%$campo%'";
+
+	//Excuta a SQL
+	$query = mysql_query($sql) or die("Erro ao Pesquisar");
+
+	//Se não for encontrado nada, então diz: 'Nada Encontrado...', se não retorna o resultado
+	if(mysql_num_rows($query) <= 0){
+		echo 'Nada Encontrado...';
+	}else{
 	
+		//Como é retornado um array, então precisamos colocar novamente a váriavel '$campo' onde colocamos a nome do campo a ser exibido
+		while($resultado = mysql_fetch_assoc($query)){
+
+			$nome = $resultado['nome'];
+			$aluno = $resultado['codigo'];
+
+				$verificar = mysql_query("SELECT * FROM movimentacao WHERE data = '$data' and aluno = '$aluno' and tipoMovimentacao = 'SAI'");
+				
+				if(mysql_num_rows($verificar) <= 0){
+
+				$tipoMovimentacao = 2;
+
+				echo "
+					<form action='' method='POST'>
+
+					<a href='javascript:entrada($aluno,$funcionario,$tipoMovimentacao);' id='btn_entrada'>Saída</a>
+					$nome
+					$hora
+					<input type='radio' name='responsavel' value='pai'>Pai
+					<input type='radio' name='responsavel' value='mae'>Mãe
+					<input type='radio' name='responsavel' value='avo'>Avôs
+                    </form>
+					";
+				}
+		}
+        
+	} 		
+
+			break;
+	}// aqui termina switch
+
+
+		
 
 	?>
+
+	
+	 <div id='exemplo'>
+
+
+
+
+	</div>
+
+</body>
+
+</html>

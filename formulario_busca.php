@@ -16,24 +16,28 @@
 <head>
 <meta charset="utf-8">
 <title>Sistema de Busca com jQuery ( Recriando )</title>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="_javascript/jquery.js"></script>
 <script type="text/javascript">
 $(function(){
 	
 	//PESQUISA INSTANTANEA PELO INPUT
 	$("#pesquisa").keyup(function(){
 		//Recupera oque está sendo digitado no input de pesquisa
-		var pesquisa 	= $(this).val();
+		var pesquisa = $(this).val();
 
 		//Recupera oque foi selecionado
-		var campo 		= $("#campo").val();
+		var campo = $("#campo").val();
+
+		//Recupera oque foi selecionado
+		var campo2 = $("#campo2").val();
 
 		//Verifica se foi digitado algo
 		if(pesquisa != ''){
 			//Cria um objeto chamado de 'dados' e guarda na propriedade 'palavra' a pesquisa e na propriedade campo o campo a ser pesquisado
 			var dados = {
 				palavra : pesquisa,
-				campo 	: campo
+				campo 	: campo,
+				campo2	: campo2
 			}
 			
 			//Envia por AJAX pelo metodo post, a pequisa para o arquivo 'busca.php'
@@ -74,6 +78,32 @@ $(function(){
 		}
 	});
 
+	$("#campo2").change(function(){
+		//Recupera oque está sendo digitado no input de pesquisa
+		var pesquisa = $("#pesquisa").val();
+
+		//Recupera oque foi selecionado
+		var campo2 		= $(this).val();
+
+		//Verifica se foi digitado algo
+		if(pesquisa != ''){
+			//Cria um objeto chamado de 'dados' e guarda na propriedade 'palavra' a pesquisa e na propriedade campo o campo a ser pesquisado
+			var dados = {
+				palavra : pesquisa,
+				campo2 	: campo2
+			}
+			
+			//Envia por AJAX pelo metodo post, a pequisa para o arquivo 'busca.php'
+			//O paremetro 'retorna' é responsável por recuperar oque vem do arquivo 'busca.php'
+			$.post('busca.php', dados, function(retorna){
+				//Mostra dentro da ul com a class 'resultados' oque foi retornado
+				$(".resultados").html(retorna);
+			});
+		}else{
+			$(".resultados").html('');
+		}
+	});
+
 	//PESQUISA DE FORMULÀRIO
 	$("#form-pesquisa").submit(function(e){
 		//Cancela a ação padrao o formulário, impedindo que ele atualize a página
@@ -84,6 +114,8 @@ $(function(){
 
 		//Recupera oque foi selecionado
 		var campo = $("#campo").val();
+		var campo2 = $("#campo2").val();
+
 		
 		//Se não for digitado nada, então ele mostra um alert
 		if(pesquisa == ''){
@@ -93,7 +125,8 @@ $(function(){
 			//Cria um objeto chamado de 'dados' e guarda na propriedade 'palavra' a pesquisa e na propriedade campo o campo a ser pesquisado
 			var dados = {
 				palavra : pesquisa,
-				campo 	: campo
+				campo 	: campo,
+				campo2	: campo2
 			}
 			
 			//Envia por AJAX pelo metodo post, a pequisa para o arquivo 'busca.php'
@@ -116,10 +149,17 @@ $(function(){
 		<option selected value="manha">Manhã</option>
 		<option value="tarde">Tarde</option>
 	</select>
+	Entrada ou Saída:
+		<select id="campo2">
+		<!-- Os valores das opções devem ser os mesmos nomes dos campos dos quias se quer a pesquisa -->
+		<option selected value="entrada">ENTRADA</option>
+		<option value="saida">SAÍDA</option>
+	</select>
 
 	<input type="text" name="pesquisa" id="pesquisa">
     <input type="submit" name="enviar" value="Pesquisar">
 </form>
+
 <form method='POST' action='busca_bd.php' class="resultados">
 
 

@@ -11,7 +11,6 @@ include "conexao_bd.php"; ?>
 			exit;
 		} else{
 			
-			echo "Você está logado! ;D<br/>";
 		}
 
 ?>
@@ -19,24 +18,40 @@ include "conexao_bd.php"; ?>
 <?php 
 	ini_set('default_charset','UTF-8');
 	mysql_set_charset('utf8');
-
-$entrada = $_POST['est'];
-$aluno = $_POST['codigoaluno'];
-$funcionario = $_POST['codigofuncionario'];
-$responsavel = $_POST['responsavel'];
-$data = $_POST['data'];
-$hora = $_POST['hora'];
+	date_default_timezone_set('America/Sao_Paulo');
+	$data = date('Y/m/d');
+	$hora = date('H:i:s');
 
 
-		mysql_query("INSERT INTO movimentacao(data,hora,responsavel,aluno,tipoMovimentacao,funcionario)
-							VALUES('$data','$hora','$responsavel','$aluno	','$entrada','$funcionario')");
 
+
+$tipoMovimentacao = $_GET['tipoMovimentacao'];
+$aluno = $_GET['aluno'];
+$funcionario = $_GET['funcionario'];
+#$responsavel = $_POST['responsavel'];
+
+if($tipoMovimentacao == 1 ){
+		$resultado = "INSERT INTO movimentacao(data,hora,aluno,funcionario,tipoMovimentacao)
+							VALUES('$data','$hora','$aluno','$funcionario','ENT')";
 
 		if (!mysql_query($resultado)) {
 			echo "Não foi possível gravar os dados";
+			exit();
 		}
 
-		header("Location: formulario_busca.php");
+		echo "Foi gravado com Sucesso!";
 
+}else if ($tipoMovimentacao == 2 ){
+
+		$resultado = "INSERT INTO movimentacao(data,hora,aluno,funcionario,tipoMovimentacao)
+							VALUES('$data','$hora','$aluno','$funcionario','SAI')";
+
+		if (!mysql_query($resultado)) {
+			echo "Não foi possível gravar os dados";
+			exit();
+		}
+
+		echo "Foi gravado com Sucesso!";
+	}
 	
 ?>
