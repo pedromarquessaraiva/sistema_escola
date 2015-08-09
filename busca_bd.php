@@ -28,7 +28,7 @@ include "conexao_bd.php"; ?>
 $tipoMovimentacao = $_GET['tipoMovimentacao'];
 $aluno = $_GET['aluno'];
 $funcionario = $_GET['funcionario'];
-#$responsavel = $_POST['responsavel'];
+$responsavel = $_POST['responsavel'];
 
 if($tipoMovimentacao == 1 ){
 		$resultado = "INSERT INTO movimentacao(data,hora,aluno,funcionario,tipoMovimentacao)
