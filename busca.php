@@ -42,16 +42,17 @@ function objetoAjax(){
 
 }
 
-function entrada(aluno,funcionario,tipoMovimentacao)
+function entrada(aluno,funcionario,tipoMovimentacao,responsavel)
 {
 
 	divResultado= document.getElementById('exemplo');
+	var responsavel = document.getElementById("responsavel");
 
 		ajax=objetoAjax();
 
 	    divResultado.innerHTML= '<img src="images/ajax.gif">';
 	    
-	 	ajax.open("GET", "busca_bd.php?aluno="+aluno+"&funcionario="+funcionario+"&tipoMovimentacao="+tipoMovimentacao);
+	 ajax.open("GET", "busca_bd.php?aluno="+aluno+"&funcionario="+funcionario+"&tipoMovimentacao="+tipoMovimentacao+"&responsavel="+responsavel);
 
 		ajax.onreadystatechange=function() {
 
@@ -131,12 +132,12 @@ function entrada(aluno,funcionario,tipoMovimentacao)
 				echo "
 					<form action='' method='POST'>
 
-					<a href='javascript:entrada($aluno,$funcionario,$tipoMovimentacao);' id='btn_entrada'>Entrada</a>
+					<a href='javascript:entrada($aluno,$funcionario,$tipoMovimentacao,responsavel);' id='btn_entrada'>Entrada</a>
 					$nome
 					$hora
-					<input type='radio' name='responsavel' value='pai'>Pai
-					<input type='radio' name='responsavel' value='mae'>Mãe
-					<input type='radio' name='responsavel' value='avo'>Avôs
+					<input type='radio' id='responsavel' value='pai'>Pai
+					<input type='radio' id='responsavel' value='mae'>Mãe
+					<input type='radio' id='responsavel' value='avo'>Avôs
                     </form>
 					";
 				}
@@ -176,7 +177,7 @@ function entrada(aluno,funcionario,tipoMovimentacao)
 				echo "
 					<form action='' method='POST'>
 
-					<a href='javascript:entrada($aluno,$funcionario,$tipoMovimentacao);' id='btn_entrada'>Saída</a>
+					<a href='javascript:entrada($aluno,$funcionario,$tipoMovimentacao,responsavel);' id='btn_entrada'>Saída</a>
 					$nome
 					$hora
 					<input type='radio' name='responsavel' value='pai'>Pai

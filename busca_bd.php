@@ -28,8 +28,10 @@ include "conexao_bd.php"; ?>
 $tipoMovimentacao = $_GET['tipoMovimentacao'];
 $aluno = $_GET['aluno'];
 $funcionario = $_GET['funcionario'];
-$responsavel = $_POST['responsavel'];
+$responsavel = $_GET['responsavel'];
 
+echo "$responsavel";
+/*
 if($tipoMovimentacao == 1 ){
 		$resultado = "INSERT INTO movimentacao(data,hora,aluno,funcionario,tipoMovimentacao)
 							VALUES('$data','$hora','$aluno','$funcionario','ENT')";
@@ -53,5 +55,5 @@ if($tipoMovimentacao == 1 ){
 
 		echo "Foi gravado com Sucesso!";
 	}
-	
+*/	
 ?>
