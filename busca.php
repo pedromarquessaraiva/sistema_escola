@@ -7,6 +7,8 @@ include "conexao_bd.php"; ?>
 <meta charset="utf-8">
 <title>Sistema de Busca com jQuery ( Recriando )</title>
 <script src="_javascript/jquery.js"></script>
+
+
 <script type="text/javascript">
 function objetoAjax(){
 
@@ -42,11 +44,18 @@ function objetoAjax(){
 
 }
 
-function entrada(aluno,funcionario,tipoMovimentacao,responsavel)
+function entrada(aluno,funcionario,tipoMovimentacao)
 {
 
 	divResultado= document.getElementById('exemplo');
-	var responsavel = document.getElementById("responsavel");
+	var form = document.Teste;
+		var msg="";
+		var Radio=null;	
+		Radio= form.responsavel;	
+		for(var i=0;i<Radio.length;i++) {
+		if(Radio[i].checked) {
+		msg = "Selecionado: " + Radio[i].id;		}	}
+		alert(msg);
 
 		ajax=objetoAjax();
 
@@ -130,14 +139,14 @@ function entrada(aluno,funcionario,tipoMovimentacao,responsavel)
 				$tipoMovimentacao = 1;
 
 				echo "
-					<form action='' method='POST'>
+					<form name='Teste' action='' method='POST'>
 
 					<a href='javascript:entrada($aluno,$funcionario,$tipoMovimentacao,responsavel);' id='btn_entrada'>Entrada</a>
 					$nome
 					$hora
-					<input type='radio' id='responsavel' value='pai'>Pai
-					<input type='radio' id='responsavel' value='mae'>Mãe
-					<input type='radio' id='responsavel' value='avo'>Avôs
+					<input type='radio' id='responsavel' id='pai' value='pai'>Pai
+					<input type='radio' id='responsavel' id='mae' value='mae'>Mãe
+					<input type='radio' id='responsavel' id='avo' value='avo'>Avôs
                     </form>
 					";
 				}
@@ -175,14 +184,14 @@ function entrada(aluno,funcionario,tipoMovimentacao,responsavel)
 				$tipoMovimentacao = 2;
 
 				echo "
-					<form action='' method='POST'>
+					<form name='Teste' action='' method='POST'>
 
 					<a href='javascript:entrada($aluno,$funcionario,$tipoMovimentacao,responsavel);' id='btn_entrada'>Saída</a>
 					$nome
 					$hora
-					<input type='radio' name='responsavel' value='pai'>Pai
-					<input type='radio' name='responsavel' value='mae'>Mãe
-					<input type='radio' name='responsavel' value='avo'>Avôs
+					<input type='radio' name='responsavel' id='pai' value='pai'>Pai
+					<input type='radio' name='responsavel' id='mae' value='mae'>Mãe
+					<input type='radio' name='responsavel' id='avo' value='avo'>Avôs
                     </form>
 					";
 				}
@@ -197,9 +206,6 @@ function entrada(aluno,funcionario,tipoMovimentacao,responsavel)
 		
 
 	?>
-
-	
-	 <div id='exemplo'>
 
 
 

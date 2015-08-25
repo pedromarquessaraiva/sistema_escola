@@ -28,11 +28,14 @@
 
 
 <header id="cabecalho">
+
 <ul><a href="logout.php"><li>Logout!</li></a></ul>
 </header>
+
 <aside id="lateral">
 
 <nav id="menu">
+	
 <ul>
 
 <li><a href="formulario_busca.php">Formulário de Busca</a></li>
