@@ -1,0 +1,80 @@
+body {
+
+ 	background-color:#ffdd00;
+    color: rgba(0,0,0,1);
+    font-family: arial,sans-serif;
+
+
+}
+/* Formatação do Menu Nav*/
+nav#menu li{
+    font-size: 18px;
+   	padding:3px;
+    margin: 3px;
+    margin-left: -40px;
+    transition: background-color 0.5s;
+    list-style-type: none;
+    
+}
+
+nav#menu li:hover{
+    background-color:#ffdd00;
+    font-weight: bold;
+   text-transform: uppercase;
+}
+
+nav#menu a{
+    color: black;
+    text-decoration: none;
+}
+/* Formatação do cabeçalho */
+header#cabecalho{
+	display: block;
+	margin-top: -40px;
+	background-color: #ffffff;
+	height: 30px;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2);
+}
+
+header#cabecalho li{
+	display: block;
+	float: right;
+}
+
+/* Formatação do Corpo da página */
+section#corpo{
+    display: block;
+    width: 920px;
+    height: 520px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    float: right;
+	padding: 15px;
+                background-color:#dddddd;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2);
+}
+/*	Formatação da lateral da página */
+aside#lateral{
+    display: block;
+    height: 530px;
+    width: 250px;
+    float: left;
+    background-color:#0000ff;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2);
+    margin-bottom: 10px;
+}
+/* Formação do Rodape da página */
+footer#rodape p{
+    text-align: center;
+ }
+
+footer#rodape{
+
+    clear: both;
+    background-color: #ffffff;
+    height: 30px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2);
+   }
