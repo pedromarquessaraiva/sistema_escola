@@ -16,11 +16,12 @@
 $usuario = $_POST['usuario'];
 $senha = $_POST['senha'];
 $categoria = $_POST['categorias'];
+	
 	switch ($categoria) 
 {
     case "funcionario":
    
-   	$consulta = mysql_query("SELECT * from funcionario where usuario = '$usuario' and '$senha'");
+   	$consulta = mysql_query("SELECT * from funcionario where usuario = '$usuario' and '$senha' = senha");
 	$row = mysql_num_rows($consulta);
 	if($row > 0 ){
 	session_start();
