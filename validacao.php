@@ -26,10 +26,11 @@ $categoria = $_POST['categorias'];
 	session_start();
 	$_SESSION['usuario'] = $_POST['usuario'];
 	$_SESSION['senha'] = $_POST['senha'];
-	echo "Você foi autenticado com sucesso! Aguarde um instante....";
+
+	echo '<script type="text/javascript">alert("Autenticado com sucesso!");</script>';	
 	echo "<script>loginsucess_funcionario()</script>";
 	}else{
-	echo "Nome de usuário ou senha inválidos!, Aguarde um momento!";
+	echo '<script type="text/javascript">alert("Usuario ou senha invalido!!!");</script>';	
 	echo "<script>loginfaleid_funcionario()</script>";
 	}
         break;
@@ -41,10 +42,10 @@ $categoria = $_POST['categorias'];
 	session_start();
 	$_SESSION['usuario'] = $_POST['usuario'];
 	$_SESSION['senha'] = $_POST['senha'];
-	echo "Você foi autenticado com sucesso! Aguarde um instante.";
+	echo '<script type="text/javascript">alert("Autenticado com sucesso!");</script>';
 	echo "<script>loginsucess_responsavel()</script>";
 	} else{
-	echo "Nome de usuário ou senha inválidos!, Aguarde um momento!";
+	echo '<script type="text/javascript">alert("Usuario ou senha invalido!!!");</script>';
 	echo "<script>loginfaleid_resposanvel()</script>";
 	}
         break;
