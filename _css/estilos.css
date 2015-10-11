@@ -1,26 +1,34 @@
-body {
+*{
 
- 	background-color:#ffdd00;
+margin: 0;
+padding: 0;
+    }
+    body {
+
+ 	background-color:#fff;
     color: rgba(0,0,0,1);
     font-family: arial,sans-serif;
+}
 
+div#logado{
 
+    color: #ddd;
+    display:block;
+    font-size: 20px;
+    text-align: center;
 }
 /* Formatação do Menu Nav*/
 nav#menu li{
-    font-size: 18px;
-   	padding:3px;
+    font-size: 17px;
+   	padding:10px;
     margin: 3px;
-    margin-left: -40px;
-    transition: background-color 0.5s;
     list-style-type: none;
     
 }
 
 nav#menu li:hover{
-    background-color:#ffdd00;
-    font-weight: bold;
-   text-transform: uppercase;
+    background-color:#eee;
+
 }
 
 nav#menu a{
@@ -30,42 +38,55 @@ nav#menu a{
 /* Formatação do cabeçalho */
 header#cabecalho{
 	display: block;
-	margin-top: -40px;
-	background-color: #ffffff;
-	height: 30px;
-	box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2);
+	background-color: #1E90FF;
+	padding: 10px;
+    height: 45px;
+    border-bottom: 1px solid #aaa;
+	
 }
 
-header#cabecalho li{
+#cabecalho ul li{
+    margin-top: -25px;
 	display: block;
 	float: right;
+    
+}
+
+.ativo{
+    background-color: #eee;
+    
 }
 
 /* Formatação do Corpo da página */
-section#corpo{
-    display: block;
-    width: 920px;
-    height: 520px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    float: right;
-	padding: 15px;
-                background-color:#dddddd;
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2);
-}
+
 /*	Formatação da lateral da página */
 aside#lateral{
     display: block;
-    height: 530px;
-    width: 250px;
+    height: 500px;
+    width: 20%;
     float: left;
-    background-color:#0000ff;
+  
     padding: 10px;
+    left: 50px;
     margin-top: 10px;
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2);
     margin-bottom: 10px;
+    border-right: 1px solid #ddd;
 }
+
+
+section#corpo{
+    
+    display: block;
+    height:500px;
+    width: 73%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    float: right;
+    
+    
+}
+
 /* Formação do Rodape da página */
 footer#rodape p{
     text-align: center;
@@ -74,7 +95,6 @@ footer#rodape p{
 footer#rodape{
 
     clear: both;
-    background-color: #ffffff;
-    height: 30px;
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2);
+    background-color: #eee;
+    height: 50px;
    }

@@ -2,19 +2,8 @@
 	include "conexao_bd.php";
 ?>
 
-<?php 
-	session_start();
 
-	if(!isset($_SESSION["usuario"]) || !isset($_SESSION["senha"])){
 
-		header("Location: login.php");
-		exit;
-	} else{
-		echo "Você está logado! ;D";
-	}
-	
-
-?>
 <html>
 
 <head>
@@ -22,14 +11,35 @@
 	    <meta charset="UTF-8"/>
 <link rel="stylesheet" type="text/css" href="_css/form.css">
 <link rel="stylesheet" type="text/css" href="_css/estilos.css">
-	</head>
+    
+</head>
 
 <body>
 
 
 <header id="cabecalho">
+	<?php 
+	session_start();
 
-<ul><a href="logout.php"><li>Logout!</li></a></ul>
+	if(!isset($_SESSION["usuario"]) || !isset($_SESSION["senha"])){
+
+		header("Location: login.php");
+		exit;
+	} else{
+		echo  "<div id ='logado'> Você está logado</div>";
+	}
+	
+
+?>
+
+<ul>
+	<a href="logout.php">
+
+<li><img src="_imagens/sair2.png"></li>
+
+	</a>
+</ul>
+
 </header>
 
 <aside id="lateral">
@@ -37,6 +47,7 @@
 <nav id="menu">
 	
 <ul>
+
 
 <li><a href="formulario_busca.php">Formulário de Busca</a></li>
 <li><a href="formulario_aluno.php">Cadastro de Alunos</a></li>

@@ -3,23 +3,30 @@
     <meta charset="UTF-8"/>
 
 <title>Sistema de login</title>
+    <link rel="stylesheet" type="text/css" href="_css/form.css">
 </head>
 
 
-<body>
-	<form name="login" method="post" action="validacao.php">
-<label>
-Categoria:
-<select name="categorias">
- <option value="funcionario">Funcionário</option>
- <option value="responsavel">Responsável</option>
-</select>
-</label><br/><br/>
-		usuario:<input type="text" name="usuario"><br/><br/>
-		senha:<input type="password" name="senha"><br/><br/>
-		<input type="submit" value="Entrar">
+<body class="fundoLogin">
+    
+    <div id="login">
+    <h2>Bem Vindo!</h2>
+	   <form name="login" method="post" action="validacao.php">
+           <label class="categoria">
+               Categoria:
+               <select name="categorias">
+                   <option>Selecione</option>
+                    <option value="funcionario">Funcionário</option>
+                    <option value="responsavel">Responsável</option>
+               </select>
+           </label><br/><br/>
+		      Usuario: <input class="user" type="text" name="usuario" placeholder="identifique-se"><br/><br/>
+		      Senha: <input class="senha" type="password" name="senha"placeholder="informe sua senha"><br/><br/>
+                     <input class="btn" type="submit" value="Entrar">
+                    <input class="btn" type="reset" value="limpar" name="reset">
 
 	</form>
+    </div>
 
 
 </body>
