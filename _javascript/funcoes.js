@@ -20,5 +20,5 @@
 
 	function busca(){
 
-		setTimeout("window.location='busca.php'");
+		setTimeout("window.location='busca.php'",1000);
 	}
