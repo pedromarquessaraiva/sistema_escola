@@ -28,7 +28,9 @@
 		header("Location: login.php");
 		exit;
 	} else{
+		
 		echo "<div id ='logado'> Você está logado!</div>";
+
 	}
 	?>
 	
@@ -67,20 +69,20 @@
 
 <form  name="formulario_aluno" method="POST" action="cadastro_alunobd.php">
 
-    	Nome: <input type="text" name="nome" placeholder="Nome do Aluno"><br/><br/>
-		Idade:   <input class="idade" placeholder="00" type="text" name="idade"><br/><br/>
-		Endereço: <input class="end" placeholder="Digite o endereço completo"type="text" name="endereco"><br/><br/>
-		Turma:    <input class="turma" placeholder="Qual a turma?"type="text" name="turma">
+    	Nome: 	  <input class="nome"  placeholder="Nome do Aluno" type="text" name="nome" required>
+		Idade:    <input class="idade" placeholder="00"  type="text" name="idade" required><br/><br/>
+		Endereço: <input class="end"   placeholder="Digite o endereço completo"type="text" name="endereco" required><br/><br/>
+		Turma:    <input class="turma" placeholder="Qual a turma?"type="text" name="turma" required>
         <label class="turno">
 			Turno:
-				<select name="turno">
-                    <option>Selecione</option>
- 					<option value="manha" selected>Manhã</option>
+				<select name="turno" required>
+                    <option value="">Selecione</option>
+ 					<option value="manha">Manhã</option>
  					<option value="tarde">Tarde</option>
 				</select>
 		</label>
-		Professor: <input class="prof" placeholder="Nome do professor"type="text" name="professor"><br/><br/>
-		Telefone para Contato: <input class="tel" placeholder="XX99999-9999" type="text" name="telefone"><br/><br/>
+		Professor: <input class="prof" placeholder="Nome do professor"type="text" name="professor" required><br/><br/>
+		Telefone para Contato: <input class="tel" placeholder="XX99999-9999" type="text" name="telefone" required><br/><br/>
         <input class="btn"  type="button" value="Voltar" onClick="history.go(-1)"> 
         <input class="btn" type="reset" value="Limpar" name="reset">
         <input class="btn" type="submit" value="Cadastrar" name="submit"  >

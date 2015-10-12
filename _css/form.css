@@ -61,7 +61,10 @@ padding-left:5px;
 }
 
 input.idade{
-    width:30px; 
+    width:40px; 
+}
+input.nome{
+    width:500px; 
 }
 input.end{
     width:580px; 

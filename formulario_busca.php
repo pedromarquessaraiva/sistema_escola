@@ -16,8 +16,14 @@
 <head>
 <meta charset="utf-8">
 <title>Sistema de Busca com jQuery ( Recriando )</title>
+
+<link rel="stylesheet" type="text/css" href="_css/form.css">
+<link rel="stylesheet" type="text/css" href="_css/estilos.css">
+
 <script type="text/javascript" src="_javascript/jquery.js"></script>
 <script type="text/javascript">
+
+
 $(function(){
 	
 	//PESQUISA INSTANTANEA PELO INPUT
@@ -141,6 +147,30 @@ $(function(){
 </head>
 
 <body>
+
+	<header id="cabecalho"></header>
+
+
+	<aside id="lateral">
+
+<nav id="menu">
+	
+<ul>
+
+
+<li class="ativo"><a href="formulario_busca.php">Formulário de Busca</a></li>
+<li><a href="formulario_aluno.php">Cadastro de Alunos</a></li>
+<li><a href="formulario_funcionario.php">Cadastro de Funcionário</a></li>
+<li><a href="formulario_responsavel.php">Cadastro do Responsável</a></li>
+<li><a href="formulario_editar.php">Editar Cadastro</a></li>
+<li><a href="formulario_excluir.php">Excluir Cadastro</a></li>
+
+</ul>
+
+</nav>
+
+</aside>
+
 
 <form id="form-pesquisa" action="" method="post">
 	Pesquisar por:
