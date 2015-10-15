@@ -7,7 +7,7 @@
 			exit;
 		} else{
 			
-			echo "Você está logado! ;D<br/>";
+			echo "<div id ='logado'> Você está logado!</div>";
 		}
 
 ?>
@@ -171,29 +171,53 @@ $(function(){
 
 </aside>
 
+<section id="corpo">
+	
+
+	<h2 id="titulo">Preencha os campos abaixo</h2>
+	<hr>
+
+
+
+<div id="formulario">
+
 
 <form id="form-pesquisa" action="" method="post">
+	
+
+<label class="turno"><!-- reaproveitando uma classe-->
+
 	Pesquisar por:
-	<select id="campo">
+	<select id="campo" required>
 		<!-- Os valores das opções devem ser os mesmos nomes dos campos dos quias se quer a pesquisa -->
-		<option selected value="manha">Manhã</option>
+		<option value="">Selecione</option>
+		<option value="manha">Manhã</option>
 		<option value="tarde">Tarde</option>
-	</select>
+	</select><br><br>
+</label>
+
+<label class="turno"><!-- reaproveitando uma classe-->
 	Entrada ou Saída:
 		<select id="campo2">
 		<!-- Os valores das opções devem ser os mesmos nomes dos campos dos quias se quer a pesquisa -->
-		<option selected value="entrada">ENTRADA</option>
-		<option value="saida">SAÍDA</option>
-	</select>
+		<option value="">Selecione</option>
+		<option value="entrada">Entrada</option>
+		<option value="saida">Saída</option>
+	</select><br><br>
+</label>
 
-	<input type="text" name="pesquisa" id="pesquisa">
-    <input type="submit" name="enviar" value="Pesquisar">
+	<input type="text" name="pesquisa" id="pesquisa" placeholder="Digite sua pesquisa"required>
+	 
+    <input class="btn" type="submit" name="enviar" value="Pesquisar">
 </form>
 
 <form method='POST' action='busca_bd.php' class="resultados">
 
 
 </form>
-
+</div>
+</section>
+	
+</div>
 </body>
 </html>

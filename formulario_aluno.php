@@ -83,9 +83,10 @@
 		</label>
 		Professor: <input class="prof" placeholder="Nome do professor"type="text" name="professor" required><br/><br/>
 		Telefone para Contato: <input class="tel" placeholder="XX99999-9999" type="text" name="telefone" required><br/><br/>
-        <input class="btn"  type="button" value="Voltar" onClick="history.go(-1)"> 
-        <input class="btn" type="reset" value="Limpar" name="reset">
+        <!--<input class="btn"  type="button" value="Voltar" onClick="history.go(-1)"> -->
         <input class="btn" type="submit" value="Cadastrar" name="submit"  >
+        <input class="btn" type="reset" value="Limpar" name="reset">
+        
         
 	</form>
 </div>
