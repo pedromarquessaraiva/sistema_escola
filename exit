@@ -1,0 +1,180 @@
+[33mcommit ce5d96c0c70fa15f2f187bc285ba6e801fef58b3[m
+Author: Pedro Marques <pedromarques360@gmail.com>
+Date:   Sun Dec 6 00:07:16 2015 -0200
+
+    Links
+
+[33mcommit 7b580f0f40763408cd2288486e03e187ad4ce40f[m
+Author: rodrigofsoares <rodrigofsoares3@gmail.com>
+Date:   Thu Oct 15 19:04:09 2015 -0300
+
+    estilização de outras paginas
+
+[33mcommit 606d2451456e7901074d230b4a1e5309be12de0b[m
+Author: rodrigofsoares <rodrigofsoares3@gmail.com>
+Date:   Sun Oct 11 23:40:01 2015 -0300
+
+    pequena alteração no form e busca e validação form aluno
+
+[33mcommit 7d5a58cb42801133651b7bae0546c29a9361bb8d[m
+Author: Pedro Marques <pedromarques360@gmail.com>
+Date:   Sun Oct 11 18:26:45 2015 -0300
+
+    Correção do erro de validação referente a senha.
+
+[33mcommit 9c10d0059e504f299731cc782cb1cdb7e6aa1d8b[m
+Author: Pedro Marques <pedromarques360@gmail.com>
+Date:   Sun Oct 11 18:22:08 2015 -0300
+
+    alteração na funcoes em js
+
+[33mcommit faac70f0732ba89f28651d03b90079967a20b231[m
+Author: rodrigofsoares <rodrigofsoares3@gmail.com>
+Date:   Sun Oct 11 16:41:19 2015 -0300
+
+    Alteração do tela inicial com required e validação com alert
+
+[33mcommit 2b1cf38a5743276aa41ff448e0a8ea51452cf165[m
+Author: Pedro Marques <pedromarques360@gmail.com>
+Date:   Sun Oct 11 15:49:56 2015 -0300
+
+    Alterações na parte visual
+
+[33mcommit 63b177832f0572beae5809f95497ecb8aef71e68[m
+Author: Pedro Marques <pedromarques360@gmail.com>
+Date:   Wed Sep 2 21:33:22 2015 -0300
+
+    Alteracao do CSS
+
+[33mcommit aadda9430ed7542f4b2e44cbe7e0d0a17deba646[m
+Author: Pedro Marques <pedromarques360@gmail.com>
+Date:   Tue Aug 25 05:00:31 2015 -0300
+
+    Modificações no CSS
+
+[33mcommit 37f67fe9042de4a943f06f41920f818047fba69c[m
+Author: Pedro Marques <pedromarques360@gmail.com>
+Date:   Wed Aug 19 00:03:01 2015 -0300
+
+    Primeiro Commit com CSS
+
+[33mcommit 3b0d045ad90000d41828c30653043f7d6ebf7f14[m
+Author: Pedro Marques <pedromarques360@gmail.com>
+Date:   Sun Aug 9 10:54:34 2015 -0300
+
+    Sistema de Busca(terceira parte)
+
+[33mcommit c74ead9ee31a693ad1d9227c319af9cec16ac0fc[m
+Author: Pedro Marques <pedromarques360@gmail.com>
+Date:   Sun Aug 9 10:47:50 2015 -0300
+
+    Sistema de Busca(teiceira parte)
+
+[33mcommit 980ecc2ea73dca64fa5847449b06b6c487cc2288[m
+Author: pedromarques360@gmail.com <pedromarques360@gmail.com>
+Date:   Fri Jul 17 11:34:25 2015 -0300
+
+    sistema de busca(segunda parte)
+
+[33mcommit ed09bfbf692f1eadfafd02c0c8f122b048b45d86[m
+Author: pedromarques360@gmail.com <pedromarques360@gmail.com>
+Date:   Thu Jul 16 15:53:48 2015 -0300
+
+    sistema de busca(primeira parte)
+
+[33mcommit 512d6da5bf1984fe5182b42746bb2350e50628d1[m
+Author: pedromarques360@gmail.com <pedromarques360@gmail.com>
+Date:   Mon Jul 6 00:40:10 2015 -0300
+
+    Tela de Editar
+
+[33mcommit 80d6bc8e9919f49923d5cb436519b06ff6895c83[m
+Author: pedromarques360@gmail.com <pedromarques360@gmail.com>
+Date:   Fri Jul 3 14:00:51 2015 -0300
+
+    Construção da tela de exclusão
+
+[33mcommit 8a385199d213c8788b43fb1a67b3580b197f6164[m
+Author: pedromarques360@gmail.com <pedromarques360@gmail.com>
+Date:   Wed Jul 1 16:34:37 2015 -0300
+
+    cadastro de responsavel
+
+[33mcommit 6fd9b837b186cffa9f5fc2a5928a6014feeaceb4[m
+Author: pedromarques360@gmail.com <pedromarques360@gmail.com>
+Date:   Wed Jul 1 01:36:16 2015 -0300
+
+    modificações nos formularios
+
+[33mcommit 2638f456959c9ecfec3e2d7694c6eb10a939db49[m
+Author: pedromarques360@gmail.com <pedromarques360@gmail.com>
+Date:   Wed Jul 1 00:51:46 2015 -0300
+
+    Formulário e Cadastro de alunos e funcionários
+
+[33mcommit 7ea98bfe5402fc59a1c2e0749d6934301210d495[m
+Author: pedromarques360@gmail.com <pedromarques360@gmail.com>
+Date:   Tue Jun 30 17:55:53 2015 -0300
+
+    alteração no nome das funções
+
+[33mcommit f507b33e8dc9e3af8f00fdeb91b828a859183277[m
+Author: pedromarques360@gmail.com <pedromarques360@gmail.com>
+Date:   Tue Jun 30 14:14:22 2015 -0300
+
+    criação funções em javascripet em um documento a parte.
+
+[33mcommit d65bc0c35d0b1c80da689d31783069009a07303d[m
+Merge: f737559 5cae8e1
+Author: pedromarques360@gmail.com <pedromarques360@gmail.com>
+Date:   Tue Jun 30 13:04:28 2015 -0300
+
+    Merge branch 'master' of github.com:pedromarquessaraiva/sistema_escola
+
+[33mcommit f73755916775498562d46b2fda9f5cb11ab18c24[m
+Author: pedromarques360@gmail.com <pedromarques360@gmail.com>
+Date:   Tue Jun 30 13:03:46 2015 -0300
+
+    autenticação dos usuários
+
+[33mcommit 5cae8e12774378b97649926c7901d6dd41392fdd[m
+Author: Pedro Marques <pedromarques360@gmail.com>
+Date:   Mon Jun 29 11:09:54 2015 -0300
+
+    Update README.md
+
+[33mcommit 26046dc82aa3ad6ea21a56e7dafa2f7977836f61[m
+Author: pedromarques360@gmail.com <pedromarques360@gmail.com>
+Date:   Mon Jun 29 11:07:04 2015 -0300
+
+    Modelos lógico e conceitual do banco de dados
+
+[33mcommit cb08a07809a3f481b99d17df2c1acb62272bf80d[m
+Author: pedromarques360@gmail.com <pedromarques360@gmail.com>
+Date:   Sat Jun 27 02:13:28 2015 -0300
+
+    Criação do caso de uso do sistema
+
+[33mcommit 11370a6afb6fd2b3f49bc74230b63a7962aefedc[m
+Author: pedromarques360@gmail.com <pedromarques360@gmail.com>
+Date:   Sat Jun 27 00:21:20 2015 -0300
+
+    Construção do sistema de login
+
+[33mcommit 1e7f09ed5bc7e55f063ad59c4b229f193120d661[m
+Author: Pedro Marques <pedromarques360@gmail.com>
+Date:   Fri Jun 26 14:14:28 2015 -0300
+
+    Update README.md
+
+[33mcommit 302cd8b253903dbc9e4d290a424fe2bbbeb2a2ad[m
+Author: pedromarques360@gmail.com <pedromarques360@gmail.com>
+Date:   Fri Jun 26 14:04:38 2015 -0300
+
+    Primeiro Commit!
+
+[33mcommit b5e7ea2f81829eb1759da2bc9ffb55988e20d26c[m
+Author: Pedro Marques <pedromarques360@gmail.com>
+Date:   Thu Jun 25 15:15:07 2015 -0300
+
+    Initial commit
