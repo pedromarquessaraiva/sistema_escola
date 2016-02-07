@@ -67,11 +67,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-<<<<<<< 3c299ab2eabf23440c430b375f4e8fdda72a9426
-                <a class="navbar-brand" href="painel.php">Sistema Escola</a>
-=======
                 <a class="navbar-brand" href="painel.php">SGPE</a>
->>>>>>> Links
             </div>
             <!-- /.navbar-header -->
 
@@ -308,33 +304,14 @@
                     <!-- /.panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-desktop fa-fw"></i> - GERENCIAMENTO DE PORTARIA
+                            <i class="fa fa-desktop fa-fw"></i> SISTEMA DE GERENCIAMENTO DE PORTARIA - SGPE
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
 
-<<<<<<< 3c299ab2eabf23440c430b375f4e8fdda72a9426
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                             sed do eiusmod tempor incididunt ut labore et dolore magna 
-                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                              Duis aute irure dolor in reprehenderit in voluptate velit 
-                              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                               occaecat cupidatat non proident, sunt in culpa qui officia 
-                               deserunt mollit anim id est laborum.</p>
+                           <img src="_imagens/telainicio.jpg" class="img-responsive" alt="Imagem Responsiva">
                                     
-                                 </p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                             sed do eiusmod tempor incididunt ut labore et dolore magna 
-                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                             ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                              Duis aute irure dolor in reprehenderit in voluptate velit 
-                              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                               occaecat cupidatat non proident, sunt in culpa qui officia 
-                               deserunt mollit anim id est laborum.</p>
-=======
-                           <img src="telainicio.jpg" width="90%">
-                                 <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Seja Bem Vindo ao Sistema de Gerenciamento de Portaria Escolar.</p>
->>>>>>> Links
+                              
                         </div>
                         <!-- /.panel-body -->
                     </div>

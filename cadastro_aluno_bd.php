@@ -8,7 +8,10 @@
 </head>
 
 <body>
+
 <?php
+ 	ini_set('default_charset','UTF-8');
+    mysql_set_charset('utf8');
 
 	$nome = $_POST['nome'];
 	$idade = $_POST['idade'];

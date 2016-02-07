@@ -315,7 +315,7 @@ $nome = $_POST['buscar'];
 
 
     $resultado = mysql_query("SELECT * FROM $tabela where nome like '%$nome%'") or die(mysql_error());
-
+    $total_registros = mysql_num_rows($resultado);
     switch ($tabela) {
     
         case "aluno":
@@ -484,10 +484,15 @@ echo"
 
 
 
-
 }
-    
+  
+  
 ?>
+  <tr>
+        <td>Registros Localizados</td>
+        <td colspan="4"><?php echo $total_registros ?></td>
+    </tr>
+    <br/>
        
         <input  class="btn"  name="" type="button" onClick="window.location = 'formulario_editar.php' " value="Voltar">
 

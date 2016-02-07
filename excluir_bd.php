@@ -6,12 +6,21 @@
 		header("Location: login.php");
 		exit;
 	} else{
-		echo "Você está logado! ;D";
 	}
 	?>
 
 
 	<?php include "conexao_bd.php";	?>
+
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<script language="JavaScript" src="_javascript/funcoes.js"></script>
+	<title>Autenticando usuário</title>
+
+</head>
+<body>
+
 
 	<?php
 
@@ -26,26 +35,30 @@
 				case "aluno":
 					
 					mysql_query("DELETE FROM $tabela WHERE codigo = '$cod'");
-					echo "<br/>Os Registros do Aluno foram deletado!<br/>";
-					echo "<a href='formulario_excluir.php'>Volta para Tela de exclusão</a>";
+					echo '<br/><script type="text/javascript">alert("Os Registros do Aluno foram deletado!<br/>");</script>';
+					echo "<script>excluirSucesso()</script>";
 					
 					break;
 				
 				case "funcionario":
 					
 					mysql_query("DELETE FROM $tabela WHERE codigo = '$cod'");
-					echo "<br/>Os Registros do funcionario foram deletado!<br/>";
-					echo "<a href='formulario_excluir.php'>Volta para Tela de Exclusão</a>";
+					echo '<br/><script type="text/javascript">alert("Os Registros do Funcionario foram deletado!<br/>");</script>';
+					echo "<script>excluirSucesso()</script>";
 					break;
 
 				case "responsavel":
 					
 					mysql_query("DELETE FROM $tabela WHERE codigo = '$cod'");
-					echo "<br/>Os Registros do Responável foram deletado!<br/>";
-					echo "<a href='formulario_excluir.php'>Volta para Tela de Exclusão</a>";
+					echo '<br/><script type="text/javascript">alert("Os Registros do Responsável foram deletado!<br/>");</script>';
+					echo "<script>excluirSucesso()</script>";
 					break;
 
 			}
 		
 
 ?>
+
+</body>
+
+</html>

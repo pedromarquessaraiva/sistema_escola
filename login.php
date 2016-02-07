@@ -24,7 +24,6 @@
 </head>
 
 
-<<<<<<< 3c299ab2eabf23440c430b375f4e8fdda72a9426
 <body >
 
   <div class="container">
@@ -36,24 +35,6 @@
                     </div>
                     <div class="panel-body">
     
-=======
-<body 
-  <div class="container">
-      
-        <div class="row">
-            
-            <div class="col-md-4 col-md-offset-4">
-            SGPE
-               <div class="login-panel panel panel-default">
-                    
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Área de acesso</h3>
-                    </div>
-
-                    <div class="panel-body">
-    
-
->>>>>>> Links
 	   
      <form role="form" method="post" action="validacao.php">
                             

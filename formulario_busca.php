@@ -188,11 +188,7 @@ $(function(){
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-<<<<<<< 3c299ab2eabf23440c430b375f4e8fdda72a9426
-                <a class="navbar-brand" href="painel.php">Sistema Escola</a>
-=======
-                <a class="navbar-brand" href="painel.php">Sistema Gerenciamento de Portaria Escolar</a>
->>>>>>> Links
+                <a class="navbar-brand" href="painel.php">SGPE</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -294,7 +290,7 @@ $(function(){
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a class="active" href="#"><i class="fa fa-file-text fa-fw"></i> Formulário de Busca</a>
+                            <a class="active" href="formulario_busca.php"><i class="fa fa-file-text fa-fw"></i> Formulário de Busca</a>
                         </li>
                         <li >
                             <a  href="formulario_aluno.php"><i class="fa fa-child fa-fw"></i> Cadastro de Alunos</a> 
@@ -443,11 +439,7 @@ $(function(){
 <div class="row">
 	<div class="col-lg-6 col-md-6">
 	<div class="form-group">
-<<<<<<< 3c299ab2eabf23440c430b375f4e8fdda72a9426
-		<label >Pesquisar por:</label>
-=======
 		<label >Pesquisar por turno:</label>
->>>>>>> Links
 			<select class="form-control" name"" required>
 				<!-- Os valores das opções devem ser os mesmos nomes dos campos dos quias se quer a pesquisa -->
 				<option value="">Selecione</option>

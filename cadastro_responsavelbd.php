@@ -72,11 +72,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-<<<<<<< 3c299ab2eabf23440c430b375f4e8fdda72a9426
                 <a class="navbar-brand" href="painel.php">Sistema Escola</a>
-=======
-                <a class="navbar-brand" href="painel.php">Sistema Gerenciamento de Portaria Escolar</a>
->>>>>>> Links
             </div>
             <!-- /.navbar-header -->
 

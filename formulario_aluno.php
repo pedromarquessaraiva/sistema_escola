@@ -1,4 +1,4 @@
-<?php 
+    <?php 
 	session_start();
 
 	if(!isset($_SESSION["usuario"]) || !isset($_SESSION["senha"])){
@@ -60,11 +60,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-<<<<<<< 3c299ab2eabf23440c430b375f4e8fdda72a9426
-                <a class="navbar-brand" href="painel.php">Sistema Escola</a>
-=======
-                <a class="navbar-brand" href="painel.php">Sistema Gerenciamento de Portaria Escolar</a>
->>>>>>> Links
+                <a class="navbar-brand" href="painel.php">SGPE</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -366,7 +362,7 @@
 			</div>
 			<div class="form-group">
 		<label>Telefone para Contato:</label>
-			<input class="form-control2" placeholder="(xx)xxxxx-xxxx" type="text" name="telefone" required><br>
+			<input class="form-control2" placeholder="(xx)xxxxx-xxxx" type="phone" name="telefone" required><br>
 			</div>
 
         <!--<input class="btn"  type="button" value="Voltar" onClick="history.go(-1)"> -->

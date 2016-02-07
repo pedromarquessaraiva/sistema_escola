@@ -60,11 +60,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-<<<<<<< 3c299ab2eabf23440c430b375f4e8fdda72a9426
-                <a class="navbar-brand" href="index.html">Sistema Escola</a>
-=======
-                <a class="navbar-brand" href="index.html">Sistema Gerenciamento de Portaria Escolar</a>
->>>>>>> Links
+                <a class="navbar-brand" href="painel.php">SGPE</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -166,11 +162,7 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-<<<<<<< 3c299ab2eabf23440c430b375f4e8fdda72a9426
-                            <a href="#"><i class="fa fa-file-text fa-fw"></i> Formulário de Busca</a>
-=======
                             <a href="formulario_busca.php"><i class="fa fa-file-text fa-fw"></i> Formulário de Busca</a>
->>>>>>> Links
                         </li>
                         <li>
                             <a href="formulario_aluno.php"><i class="fa fa-child fa-fw"></i> Cadastro de Alunos</a> 

@@ -22,3 +22,10 @@
 
 		setTimeout("window.location='busca.php'",1000);
 	}
+
+	function excluirSucesso(){
+		setTimeout("window.location='formulario_excluir.php'",100);
+	}
+	function editarSucesso(){
+		setTimeout("window.location='formulario_editar.php'",100);
+	}

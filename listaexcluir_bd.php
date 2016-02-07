@@ -57,7 +57,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Sistema Escola</a>
+                <a class="navbar-brand" href="painel.php">SGPE</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -459,12 +459,11 @@
 
 	}else {
 
-		echo "<a href='formulario_excluir.php'>Volta para Tela de Exclusão</a>";
-	
+
 	}
 	
 	?>
-						
+    <input  class="btn"  name="" type="button" onClick="window.location = 'formulario_excluir.php' " value="Voltar">						
 			</div>
 	
 

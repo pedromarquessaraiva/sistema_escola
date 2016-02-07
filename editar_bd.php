@@ -6,7 +6,7 @@
 		header("Location: login.php");
 		exit;
 	} else{
-		echo "Você está logado! ;D<br/>";
+		
 	}
 	?>
 
@@ -17,6 +17,7 @@
 <head>
     <meta charset="UTF-8"/>
 	<title></title>
+	<script language="JavaScript" src="_javascript/funcoes.js"></script>
 </head>
 
 <body>
@@ -40,8 +41,8 @@
 
 		  	mysql_query("update $tabela set nome='$nome', idade = '$idade', endereco = '$endereco', turma = '$turma', turno = '$turno', professor = '$professor', telefone = '$telefone' where codigo = '$codigo'");
 
-		  		echo "Os dados de $nome foram atualizados!";
-
+		  		echo '<br/><script type="text/javascript">alert("Os dados do Aluno foram atualizados!<br/>");</script>';
+				echo "<script>editarSucesso()</script>";	
 				break;
 
 		case "funcionario":
@@ -58,8 +59,9 @@
 
 		  	mysql_query("update $tabela set nome ='$nome',usuario ='$usuario', senha ='$senha', email = '$email', cargo = '$cargo', turno = '$turno', endereco = '$endereco', telefone ='telefone' where codigo = '$codigo' ");	
 
-		  		echo "Os dados de $nome foram atualizados!";
 
+		  		echo '<br/><script type="text/javascript">alert("Os dados do Funcionario foram atualizados!<br/>");</script>';
+				echo "<script>editarSucesso()</script>";		
 				break;
 
 
@@ -75,17 +77,14 @@
 
 			mysql_query("update $tabela set nome = '$nome', usuario = '$usuario', senha = '$senha', email = '$email' where codigo = '$codigo'");
 
-				echo "Os dados de $nome foram atualizados!";
-
+				echo '<br/><script type="text/javascript">alert("Os dados do Responsável foram atualizados!<br/>");</script>';
+				echo "<script>editarSucesso()</script>";	
 				break;			
 						
 		}
 
 
 ?>
-
-<br/><a href="formulario_editar.php">Volte ao Painel de Exclusão</a><br/>
-<a href="painel.php">Volte ao Painel Central</a><br/>
 
 </body>
 
